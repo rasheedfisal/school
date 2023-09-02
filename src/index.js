@@ -8,6 +8,7 @@ import i18next from "i18next";
 import { initReactI18next, I18nextProvider } from "react-i18next";
 import HttpApi from "i18next-http-backend";
 import LanguageDetector from "i18next-browser-languagedetector";
+import LoaderFull from "./components/LoaderFull";
 
 i18next
   .use(HttpApi)
@@ -29,17 +30,10 @@ i18next
     },
   });
 
-const loadingMarkup = (
-  <div
-    style={{ paddingTop: "4rem", paddingBottom: "4rem", textAlign: "center" }}
-  >
-    <h3>Loading...</h3>
-  </div>
-);
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Suspense fallback={loadingMarkup}>
+    <Suspense fallback={<LoaderFull />}>
       <BrowserRouter>
         <App />
       </BrowserRouter>

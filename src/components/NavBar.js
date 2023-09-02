@@ -168,9 +168,9 @@ const NavBar = (props) => {
               alignItems: "center",
             }}
           >
-            <Box sx={{ position: "relative" }}>
+            {/* <Box sx={{ position: "relative" }}>
               <LanguageSetting />
-            </Box>
+            </Box> */}
             <IconButton
               aria-label="open drawer"
               edge="start"

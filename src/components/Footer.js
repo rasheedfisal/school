@@ -175,10 +175,11 @@ const Footer = () => {
           >
             <Grid item>
               <a
-                href="https://matt-pereira.vercel.app/"
+                href="https://my-portfolio-nine-eta.vercel.app/"
                 className="text-decoration-none link-light"
+                target="_blank"
               >
-                Website by Matt Pereira
+                Website by Strategic Insights
               </a>
             </Grid>
           </Grid>
