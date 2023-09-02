@@ -27,10 +27,10 @@ const Showcase = ({ title, image }) => {
       ></Box>
       <Box sx={{ zIndex: 2 }}>
         <Typography
-          variant="h1"
           sx={{
             color: "white",
             textTransform: "uppercase",
+            typography: { xl: "h1", md: "h3", sm: "h4", xs: "h5" },
           }}
         >
           {title}
